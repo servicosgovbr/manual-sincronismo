@@ -10,7 +10,7 @@ Manual de sincronismo de dados da automação
    :maxdepth: 2
    :caption: Contents:
    
-   Passos
+   passos
 
 
 Indices and tables
