@@ -9,7 +9,6 @@ Manual de sincronismo de dados da automação
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   
    passos
 
 
