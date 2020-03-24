@@ -20,6 +20,8 @@ Liberar acesso do IP
 
 O IP que iremos utilizar como saída das informações é 18.228.115.216.
 
+.. attention::
+   O servidor não está conectado na INFOVIA. Não é possível a conexão direta via INFOVIA.
 
 Enviar configurações
 ++++++++++++++++++++
