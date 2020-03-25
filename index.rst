@@ -8,14 +8,12 @@ Manual de sincronismo de dados da automação
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Introdução
 
    passos
+   processamento
 
-
-Indices and tables
-==================
+Índices
+========
 
 * :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
