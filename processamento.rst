@@ -26,3 +26,7 @@ https://linux.die.net/man/1/inotifywait
 
 Wiki do inotify-tools:
 https://github.com/inotify-tools/inotify-tools/wiki
+
+.. note::
+    Cada JSON tem dados específicos pois é referente a um serviço único. Verifique com o gestor
+    do serviço quais são os campos dos formulários das etapas/ciclos.
