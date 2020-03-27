@@ -37,5 +37,9 @@ Adicionar chave pública
 Ao enviar as configurações iremos enviar para você a chave pública para acesso automatizado.
 Ver o passo 3 do guia como instalar https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2
 
+.. important::
+    **Não envie a senha via email**. Não há necessidade de senha uma vez que a chave pública foi instalada.
+    Caso deseje nos informar a senha faça por um meio seguro.
+
 .. attention::
    O arquivo vai ser sempre adicionado da diferença. Caso deseje ter um histórico é necessário copiar o arquivo diariamente para outro local.
