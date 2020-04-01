@@ -30,3 +30,7 @@ https://github.com/inotify-tools/inotify-tools/wiki
 .. note::
     Cada JSON tem dados específicos pois é referente a um serviço único. Verifique com o gestor
     do serviço quais são os campos dos formulários das etapas/ciclos.
+
+Os nomes dos campos estão separados pelo caractere "|". 
+
+No formato: <NOME_DO_CAMPO_NO_FORMULARIO>|<LABEL_DO_CAMPO_NO_FORMULARIO_SE_EXISTIR> ou só o <NOME_DO_CAMPO_DO_FORMULARIO>
