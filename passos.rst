@@ -39,6 +39,8 @@ Ver o passo 3 do guia como instalar https://www.digitalocean.com/community/tutor
 
 .. important::
     Por favor verificar a permissão na pasta .ssh e no arquivo authorized_keys ao adicionar a chave pública.
+    A permissão deve ser a seguinte: 755 no .ssh 600 no authorized_keys
+    O usuário do ssh deve ser o usuário da pasta .ssh e o usuário do ssh deve estar no grupo.    
 
 .. important::
     **Não envie a senha via email**. Não há necessidade de senha uma vez que a chave pública foi instalada.
