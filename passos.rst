@@ -38,6 +38,9 @@ Ao enviar as configurações iremos enviar para você a chave pública para aces
 Ver o passo 3 do guia como instalar https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2
 
 .. important::
+    Por favor verificar a permissão na pasta .ssh e no arquivo authorized_keys ao adicionar a chave pública.
+
+.. important::
     **Não envie a senha via email**. Não há necessidade de senha uma vez que a chave pública foi instalada.
     Caso deseje nos informar a senha faça por um meio seguro.
 
