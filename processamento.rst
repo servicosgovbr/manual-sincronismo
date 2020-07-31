@@ -107,3 +107,189 @@ Estrutura do JSON
 Os nomes dos campos estão separados pelo caractere "|". 
 
 No formato: <NOME_DO_CAMPO_NO_FORMULARIO>|<LABEL_DO_CAMPO_NO_FORMULARIO_SE_EXISTIR> ou só o <NOME_DO_CAMPO_DO_FORMULARIO>
+
+Documentação dos campos
++++++++++++++++++++++++
+
+Raiz do JSON
+************
+Composto de um array com N solicitações do serviço público.
+
+Campos
+------	
+
+id - int(11) PK
+   Código do processo	
+
+form_versao - varchar(20)
+   Formulário e Versão (cod_form e cod_versao)
+
+ide_finalizado - varchar(1)
+    Flag do status do processo; 
+      - A -> Andamento; 
+      - P -> Finalizado como aprovado;
+      - C -> Finalizado como cancelado;
+      - R -> Finalizado como rejeitado
+
+des_titulo - varchar(50)
+    Nome do modelo BPM
+
+Metadados
+*********
+Composto de um array com N etapas da solicitação.
+
+Campos
+------
+
+cod_processo_f - int(11) PK
+    Código do processo
+
+cod_etapa_f - smallint(6) PK
+    Código da etapa
+
+cod_ciclo_f - smallint(6) PK
+    Código do ciclo
+
+cpf - varchar(13)
+    Cpf do cidadão
+
+protocolo - varchar(19)
+    Protocolo
+
+<DADOS DO FORMULARIO>
+    Dados do formulário conforme documentação da automação do serviço homologado pelo órgão. 
+    Os formulários podem ser acessados na interface de atendimento disponibilizada ao dono do serviço.
+
+titulo_etapa - varchar(60)
+    Nome da etapa
+
+processos_etapas
+    Conjunto de informações para cada etapa da solicitação e metadados.
+
+Processos_etapas
+----------------
+
+cod_ciclo - smallint(6) PK
+    Código do ciclo
+
+cod_etapa - smallint(6) PK
+    Código da etapa
+
+aprovacao_mob - varchar(255)
+    Aprovação Mob
+
+cod_usuario_etapa - smallint(6) PK
+    Código do usuário da etapa. O usuário aqui é o servidor público resolvedor dessa etapa e **não é o cidadão**.
+
+dat_finalizacao - datetime
+    Data de conclusão da etapa (envio do formulário)
+
+dat_gravacao - datetime
+    Data de início da etapa (data de conclusão da etapa anterior ou data de abertura)
+
+ide_status - varchar(255)
+  Flag do status do processo. 
+    - A -> Andamento
+    - P -> Finalizado como aprovado
+    - C -> Finalizado como cancelado
+    - R -> Finalizado como rejeitado
+
+ide_status_ant - varchar(255)
+  Flag do status anterior do processo. 
+    - A -> Andamento
+    - P -> Finalizado como aprovado
+    - C -> Finalizado como cancelado
+    - R -> Finalizado como rejeitado
+
+ide_temporario - varchar(255)
+    Status temporário
+
+ide_visualizado - varchar(255)
+    Status visualizado
+
+nom_arq_assinado - varchar(255)
+    Nome do arquivo assinado
+
+uuid - varchar(255)
+    Unique ID da etapa
+
+vlr_atraso1 - bigint(20) 
+    Valor de atraso
+
+vlr_campos_complem - varchar(255) 
+    Valor campos complementados
+
+vlr_qtde_alerta - int(11)
+    Valor quantidade de alerta
+
+vlr_qtde_atraso - int(11)
+     Valor quantidade de atraso
+
+vlr_qtde_atraso_gest - int(11)
+    Valor quantidade de atraso gestor
+
+vlr_temp_atr_gest - bigint(20)
+     Valor tempo atraso gestor
+
+vlr_temp_hiberna - bigint(20)
+     Valor tempo hibernação
+
+vlr_temp_lim_gest - bigint(20)
+    Valor tempo limite gestor
+
+vlr_tempo_alerta - bigint(20)
+     Valor tempo alerta
+
+vlr_tempo_atraso - bigint(20)
+    Valor tempo atraso
+
+vlr_tempo_consumido - bigint(20)
+    Valor tempo consumido
+
+vlr_tempo_consumido_corrido - bigint(20)
+    Valor tempo consumido corrido
+
+vlr_tempo_escalona - bigint(20)
+    Valor tempo escalonado
+
+cod_processo - int(11) PK
+    Código do processo
+
+data_print - longtext
+    Data print
+
+NOME DA GRID 
+*************
+Composto de um array de N registros da grid para cada etapa da solicitação e metadados.
+
+Campos
+------
+
+identificador - int(11)
+    Identificador
+
+cod_processo -int(11) PK
+    Código do processo
+
+cod_etapa - smallint(6) PK
+    Código da etapa
+
+cod_ciclo - smallint(6) PK
+    Código do ciclo
+
+indice - smallint(6)
+    Indice do elemento
+
+<DADOS DA GRID DO FORMULARIO>
+    Dados da grid do formulário conforme documentação da automação do serviço homologado pelo órgão. 
+    As grids podem ser acessadas na interface de atendimento disponibilizada ao dono do serviço.
+
+titulo_etapa - varchar(60)
+    Nome da etapa
+
+.. note::
+   Os campos cod_processo, cod_etapa e cod_ciclo são chaves compostas para identificar os registros da grid para cada etapa. 
+   O indice identifica a ordem do elemento na grid.
+
+.. attention::
+   Cada grid possui o seu próprio nome. Verifique com o dono do serviço quais grids existem na etapa.
