@@ -27,7 +27,7 @@ https://linux.die.net/man/1/inotifywait
 Wiki do inotify-tools:
 https://github.com/inotify-tools/inotify-tools/wiki
 
-Extrutura do JSON
+Estrutura do JSON
 +++++++++++++++++
 
 .. code-block:: json
