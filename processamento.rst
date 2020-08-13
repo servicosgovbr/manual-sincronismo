@@ -258,6 +258,15 @@ cod_processo - int(11) PK
 data_print - longtext
     Data print
 
+des_login - varchar(50)
+    Login do usuário responsável pela etapa
+
+des_email - varchar(255)
+    Email do usuário responsável pela etapa
+
+nom_usuario - varchar(50)
+    Nome do usuário responsável pela etapa
+
 NOME DA GRID 
 *************
 Composto de um array de N registros da grid para cada etapa da solicitação e metadados.
