@@ -126,10 +126,10 @@ form_versao - varchar(20)
 
 ide_finalizado - varchar(1)
     Flag do status do processo; 
-      - A -> Andamento; 
-      - P -> Finalizado como aprovado;
-      - C -> Finalizado como cancelado;
-      - R -> Finalizado como rejeitado
+      - A -> Em andamento; 
+      - P -> Aprovado;
+      - C -> Cancelado;
+      - R -> Rejeitado.
 
 des_titulo - varchar(50)
     Nome do modelo BPM
@@ -188,18 +188,24 @@ dat_gravacao - datetime
     Data de início da etapa (data de conclusão da etapa anterior ou data de abertura)
 
 ide_status - varchar(255)
-  Flag do status do processo. 
-    - A -> Andamento
-    - P -> Finalizado como aprovado
-    - C -> Finalizado como cancelado
-    - R -> Finalizado como rejeitado
+  Flag do status da etapa.
+    - A -> Em andamento;
+    - D -> Escalonado;
+    - P -> Aprovado;
+    - R -> Rejeitado;
+    - C -> Cancelado;
+    - H -> Hibernado;
+    - L -> Em paralelismo.
 
 ide_status_ant - varchar(255)
-  Flag do status anterior do processo. 
-    - A -> Andamento
-    - P -> Finalizado como aprovado
-    - C -> Finalizado como cancelado
-    - R -> Finalizado como rejeitado
+  Flag do status anterior da etapa.
+    - A -> Em andamento;
+    - D -> Escalonado;
+    - P -> Aprovado;
+    - R -> Rejeitado;
+    - C -> Cancelado;
+    - H -> Hibernado;
+    - L -> Em paralelismo.
 
 ide_temporario - varchar(255)
     Status temporário
