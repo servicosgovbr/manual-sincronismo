@@ -18,7 +18,7 @@ O manual online do rsync se encontra em https://linux.die.net/man/1/rsync
 Liberar acesso do IP
 ++++++++++++++++++++
 
-O IP que iremos utilizar como saída das informações é 18.229.104.253.
+O IP que iremos utilizar como saída das informações é 119.8.84.0.
 
 .. attention::
    O servidor não está conectado na INFOVIA. Não é possível a conexão direta via INFOVIA.
